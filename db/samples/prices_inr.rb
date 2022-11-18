@@ -5,5 +5,5 @@ Spree::Product.all.each do |product|
     currency: 'INR',
     amount: product.master.cost_price * 10,
     variant_id: product.master.id
-  )
+  ) unless product.prices.where(currency: 'INR').exists?
 end

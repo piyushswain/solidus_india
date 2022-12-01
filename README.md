@@ -19,9 +19,31 @@ Bundle your dependencies and run the installation generator:
 bin/rails generate solidus_india:install
 ```
 
+Go to `config/initializers/spree.rb` and change the following line
+
+```ruby
+# Default currency for new sites
+  config.currency = "USD"
+```
+
+to
+
+```ruby
+# Default currency for new sites
+  config.currency = "INR"
+```
+
+This will allow you to use all the INR specific products, taxes and shipping methods added by the seeds.
+
 ## Usage
 
-<!-- Explain how to use your extension once it's been installed. -->
+This extension adds seeds and required functionality to modify the base Solidus Store into an ecommerce store in the indian context.
+
+The base Solidus store is more USA and Europe friendly with products, prices, shipping and taxes based on those regions. For newcomers to Solidus from a region other than the USA and Europe, it becomes quite difficult to start a new project on Solidus.
+
+As soon as you finish the installation, you can start the server and find that the base Solidus Store now works as an Indian ecommerce store with all the prices, taxes and shipping methods in INR and working for an indian context.
+
+I would also recommend using the [solidus_razorpay](https://github.com/solidusio-contrib/solidus_razorpay) extension to allow your store to make UPI payments with the help of the Razorpay payment integration.
 
 ## Development
 

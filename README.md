@@ -110,4 +110,4 @@ Please refer to the dedicated [page](https://github.com/solidusio/solidus/wiki/H
 
 ## License
 
-Copyright (c) 2022 [name of extension author], released under the New BSD License.
+Copyright (c) 2022 [piyushswain](https://github.com/piyushswain), released under the New BSD License.
